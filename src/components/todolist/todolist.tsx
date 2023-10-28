@@ -1,4 +1,8 @@
-export function TodoList(props: { title: string }) {
+type PropsType = {
+    title: string
+  }
+
+export function TodoList(props: PropsType) {
   return (
     <div className="card">
       <h3>{props.title}</h3>

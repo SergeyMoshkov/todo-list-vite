@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <Header />
       <div className="todo-list">
-        <TodoList title="Todo List" />
+        <TodoList title="Javascript" />
         <TodoList title="Golang"/>
-        <TodoList title="Javascript"/>
+        <TodoList title="React"/>
       </div>
     </div>
   );
