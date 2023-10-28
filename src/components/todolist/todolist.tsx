@@ -18,9 +18,9 @@ export function TodoList(props: PropsType) {
         <button className="buttonPlus">+</button>
       </div>
       <ul>
-        <li><input type="checkbox" checked={props.tasks[0].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[0].title}</span></li>
-        <li><input type="checkbox" checked={props.tasks[1].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[1].title}</span></li>
-        <li><input type="checkbox" checked={props.tasks[2].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[2].title}</span></li>
+        <li><input type="checkbox" defaultChecked={props.tasks[0].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[0].title}</span></li>
+        <li><input type="checkbox" defaultChecked={props.tasks[1].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[1].title}</span></li>
+        <li><input type="checkbox" defaultChecked={props.tasks[2].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[2].title}</span></li>
       </ul>
     </div>
   );

@@ -1,11 +1,12 @@
 import { Header } from "@/components/header/header";
-import { TaskType, TodoList } from "./components/todolist/todolist";
+import { TaskType } from "./components/todolist/todolist";
+import {CardName} from "@/components/card/card.tsx";
 
 function App() {
   const movies: Array<TaskType> = [
-    { id: 1, title: "Movie 1", isDone: false },
+    { id: 1, title: "Movie 1",  isDone: false },
     { id: 2, title: "Movie 2", isDone: false },
-    { id: 3, title: "Movie 3", isDone: true },
+    { id: 3, title: "Movie 3",  isDone: true },
   ];
 
   const songs: Array<TaskType> = [
@@ -24,9 +25,13 @@ function App() {
     <div className="App">
       <Header />
       <div className="todo-list">
-        <TodoList title="Javascript" tasks={tasks} />
-        <TodoList title="Golang" tasks={songs} />
-        <TodoList title="React" tasks={movies} />
+        {/*<TodoList title="Javascript" tasks={tasks} />*/}
+        {/*<TodoList title="Golang" tasks={songs} />*/}
+        {/*<TodoList title="React" tasks={movies} />*/}
+        <CardName title="Javascript" cardDescription="Film" tasks={tasks}/>
+        <CardName title="Golang" cardDescription="Song" tasks={songs}/>
+        <CardName title="React" cardDescription="Musik" tasks={movies}/>
+
       </div>
     </div>
   );
