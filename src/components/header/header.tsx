@@ -1,3 +1,3 @@
 export function Header() {
-  return <div className="header">Header</div>;
+  return <div className="header">Todo-list</div>;
 }

@@ -72,7 +72,8 @@
     @apply dark;
   }
   body {
-    @apply bg-background text-foreground;
+    /* @apply bg-background text-foreground; */
+    background-color: #8798CC;
   }
 }
 
@@ -84,8 +85,9 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin: 5px;
-  background-color: rgb(222, 102, 247);
+  background-color: #1AB99B;
   border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(95, 48, 48);
 }
 
 button {
@@ -103,4 +105,17 @@ button {
 .card {
   margin: 5px;
   padding: 5px;
+  background-color: #F0C514;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgb(95, 48, 48);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.buttonPlus {
+  margin: 5px;
+  border-radius: 2px;
+  background-color: blueviolet;
+  margin-left: 8px;
+  width: 20px;
 }
