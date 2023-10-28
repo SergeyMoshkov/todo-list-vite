@@ -1,5 +1,12 @@
+export type TaskType = {
+    id: number
+    title: string
+    isDone: boolean
+}
+
 type PropsType = {
     title: string
+    tasks: Array<TaskType>
   }
 
 export function TodoList(props: PropsType) {
@@ -11,9 +18,9 @@ export function TodoList(props: PropsType) {
         <button className="buttonPlus">+</button>
       </div>
       <ul>
-        <li><input type="checkbox"/>&nbsp;&nbsp;&nbsp;<span>CSS & HTML</span></li>
-        <li><input type="checkbox"/>&nbsp;&nbsp;&nbsp;<span>JS</span></li>
-        <li><input type="checkbox" checked={true}/>&nbsp;&nbsp;&nbsp;<span>NODEJS</span></li>
+        <li><input type="checkbox" checked={props.tasks[0].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[0].title}</span></li>
+        <li><input type="checkbox" checked={props.tasks[1].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[1].title}</span></li>
+        <li><input type="checkbox" checked={props.tasks[2].isDone}/>&nbsp;&nbsp;&nbsp;<span>{props.tasks[2].title}</span></li>
       </ul>
     </div>
   );
